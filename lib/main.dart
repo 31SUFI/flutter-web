@@ -4,7 +4,7 @@ import 'package:testing/Provider/counter-provider.dart';
 import 'package:testing/Provider/favorite-provider.dart';
 import 'package:testing/Screen/Favorite/favorite.dart';
 
-import 'Screen/counterscreen.dart';
+import 'Screen/counter/counterscreen.dart';
 
 // Import the Counter class
 
