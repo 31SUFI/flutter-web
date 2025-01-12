@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:provider/provider.dart';
-import 'package:testing/Provider/counter-provider.dart';
-import 'package:testing/Provider/favorite-provider.dart';
-import 'package:testing/Screen/Favorite/favorite.dart';
-
-import 'Screen/counter/counterscreen.dart';
-
-// Import the Counter class
+import 'package:portfolio_website/providers/theme_provider.dart';
+import 'package:portfolio_website/providers/section_visibility_provider.dart';
+import 'package:portfolio_website/screens/home_screen.dart';
 
 void main() {
+  setUrlStrategy(PathUrlStrategy());
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => FavoriteProvider(), // Provide the Counter class
-      child: MyApp(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => SectionVisibilityProvider()),
+      ],
+      child: const MyApp(),
     ),
   );
 }
@@ -22,8 +23,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Favorite(),
+    return MaterialApp(
+      title: 'Portfolio',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF2196F3),
+          brightness: Brightness.light,
+        ),
+        scrollbarTheme: ScrollbarThemeData(
+          thumbVisibility: MaterialStateProperty.all(true),
+          thickness: MaterialStateProperty.all(8),
+          radius: const Radius.circular(4),
+        ),
+      ),
+      home: const HomeScreen(),
     );
   }
 }
