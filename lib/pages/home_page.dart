@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: Navbar(),
       ),
-      drawer: const NavDrawer(),
+      drawer: NavDrawer(scrollController: _scrollController),
       body: SingleChildScrollView(
         controller: _scrollController,
         child: Column(

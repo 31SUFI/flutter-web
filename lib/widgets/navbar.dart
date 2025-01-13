@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/utils/constants.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio_website/pages/home_page.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({super.key});
@@ -15,30 +17,45 @@ class Navbar extends StatelessWidget {
           Scaffold.of(context).openDrawer();
         },
       ),
+      actions: [
+        IconButton(
+          icon: SvgPicture.asset(
+            'assets/icons/github.svg',
+            height: 24,
+            width: 24,
+          ),
+          onPressed: () {
+            // No action needed, just display the icon
+          },
+        ),
+      ],
     );
   }
 }
 
 class NavDrawer extends StatelessWidget {
-  const NavDrawer({super.key});
+  final ScrollController scrollController;
+
+  const NavDrawer({super.key, required this.scrollController});
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.white, // Set background color to white
+        color: Colors.white,
         child: Center(
-          // Center the content
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Center vertically
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ListTile(
                 leading: const Icon(Icons.home, color: Colors.black),
                 title:
                     const Text('Home', style: TextStyle(color: Colors.black)),
                 onTap: () {
-                  // Navigate to Home
-                  Navigator.pop(context);
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
                 },
               ),
               ListTile(
@@ -46,8 +63,12 @@ class NavDrawer extends StatelessWidget {
                 title:
                     const Text('About', style: TextStyle(color: Colors.black)),
                 onTap: () {
-                  // Navigate to About
                   Navigator.pop(context);
+                  scrollController.animateTo(
+                    600,
+                    duration: const Duration(milliseconds: 500),
+                    curve: Curves.easeInOut,
+                  );
                 },
               ),
               ListTile(
@@ -55,8 +76,12 @@ class NavDrawer extends StatelessWidget {
                 title:
                     const Text('Skills', style: TextStyle(color: Colors.black)),
                 onTap: () {
-                  // Navigate to Skills
                   Navigator.pop(context);
+                  scrollController.animateTo(
+                    1200,
+                    duration: const Duration(milliseconds: 500),
+                    curve: Curves.easeInOut,
+                  );
                 },
               ),
               ListTile(
@@ -64,8 +89,12 @@ class NavDrawer extends StatelessWidget {
                 title: const Text('Projects',
                     style: TextStyle(color: Colors.black)),
                 onTap: () {
-                  // Navigate to Projects
                   Navigator.pop(context);
+                  scrollController.animateTo(
+                    1800,
+                    duration: const Duration(milliseconds: 500),
+                    curve: Curves.easeInOut,
+                  );
                 },
               ),
               // Add more items as needed
