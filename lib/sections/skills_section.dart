@@ -94,6 +94,7 @@ class SkillsSection extends StatelessWidget {
       {'name': 'Firebase', 'icon': 'assets/icons/skills/firebase.svg'},
       {'name': 'Git', 'icon': 'assets/icons/skills/git.svg'},
       {'name': 'Rest API', 'icon': 'assets/icons/skills/api.svg'},
+      {'name': 'Provider', 'icon': 'assets/icons/skills/statemanagement.svg'},
       {'name': 'MvvM Architecture', 'icon': 'assets/icons/skills/mvvm.svg'}
     ];
 

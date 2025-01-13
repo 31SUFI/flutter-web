@@ -33,8 +33,8 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.light,
         ),
         scrollbarTheme: ScrollbarThemeData(
-          thumbVisibility: MaterialStateProperty.all(true),
-          thickness: MaterialStateProperty.all(8),
+          thumbVisibility: WidgetStateProperty.all(true),
+          thickness: WidgetStateProperty.all(8),
           radius: const Radius.circular(4),
         ),
       ),

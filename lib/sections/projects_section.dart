@@ -7,15 +7,15 @@ class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});
 
   static final List<Project> projectsList = [
-    Project(
+    const Project(
       title: 'Bookify - A Modern Library App',
       githubUrl: 'https://github.com/31SUFI/Bookify.git',
     ),
-    Project(
+    const Project(
       title: 'E-commerce App - A Modern Grocery Store',
       githubUrl: 'https://github.com/31SUFI/E-Commerce-app.git',
     ),
-    Project(
+    const Project(
       title: 'Nayapay Clone - A Modern Payment Gateway',
       githubUrl: 'https://github.com/31SUFI/NayaPay_Clone.git',
     ),

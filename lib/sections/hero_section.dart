@@ -54,23 +54,23 @@ class HeroSection extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  Row(
+                  const Row(
                     children: [
                       _SocialIconButton(
                         svgPath: 'assets/icons/linkedin.svg',
                         platform: 'linkedin',
                       ),
-                      const SizedBox(width: 15),
+                      SizedBox(width: 15),
                       _SocialIconButton(
                         svgPath: 'assets/icons/github.svg',
                         platform: 'github',
                       ),
-                      const SizedBox(width: 15),
+                      SizedBox(width: 15),
                       _SocialIconButton(
                         svgPath: 'assets/icons/medium.svg',
                         platform: 'medium',
                       ),
-                      const SizedBox(width: 15),
+                      SizedBox(width: 15),
                       _SocialIconButton(
                         svgPath: 'assets/icons/whatsapp.svg',
                         platform: 'whatsapp',

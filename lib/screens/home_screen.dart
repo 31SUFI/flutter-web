@@ -11,15 +11,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const PreferredSize(
+    return const Scaffold(
+      appBar: PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: Navbar(),
       ),
-      drawer: const NavDrawer(),
+      drawer: NavDrawer(),
       body: SingleChildScrollView(
         child: Column(
-          children: const [
+          children: [
             HeroSection(),
             AboutSection(),
             SkillsSection(),

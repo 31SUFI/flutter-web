@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/utils/constants.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({super.key});
