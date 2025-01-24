@@ -95,7 +95,11 @@ class SkillsSection extends StatelessWidget {
       {'name': 'Git', 'icon': 'assets/icons/skills/git.svg'},
       {'name': 'Rest API', 'icon': 'assets/icons/skills/api.svg'},
       {'name': 'Provider', 'icon': 'assets/icons/skills/statemanagement.svg'},
-      {'name': 'MvvM Architecture', 'icon': 'assets/icons/skills/mvvm.svg'}
+      {'name': 'MvvM Architecture', 'icon': 'assets/icons/skills/mvvm.svg'},
+      {'name': 'Node.js', 'icon': 'assets/icons/skills/nodejs.svg'},
+      {'name': 'Express.js', 'icon': 'assets/icons/skills/express.svg'},
+      {'name': 'MongoDB', 'icon': 'assets/icons/skills/mongodb.svg'},
+      {'name': 'MySQL', 'icon': 'assets/icons/skills/mysql.svg'},
     ];
 
     return skills.map((skill) {

@@ -34,7 +34,7 @@ class HeroSection extends StatelessWidget {
                     child: AnimatedTextKit(
                       animatedTexts: [
                         TypewriterAnimatedText('Flutter Developer'),
-                        TypewriterAnimatedText('UI/UX Designer'),
+                        TypewriterAnimatedText('Web Developer'),
                         TypewriterAnimatedText('Mobile App Developer'),
                       ],
                       repeatForever: true,

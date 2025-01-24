@@ -8,16 +8,29 @@ class ProjectsSection extends StatelessWidget {
 
   static final List<Project> projectsList = [
     const Project(
+      title: 'Real Estate Web - A Modern Real Estate App',
+      githubUrl: 'https://github.com/31SUFI/Real-Estate-Website.git',
+      liveUrl: 'https://bauction.netlify.app',
+      iconUrl: 'assets/icons/projects_icons/real_estate.svg',
+      isLive: true,
+    ),
+    const Project(
       title: 'Bookify - A Modern Library App',
       githubUrl: 'https://github.com/31SUFI/Bookify.git',
+      iconUrl: 'assets/icons/projects_icons/bookify.svg',
+      liveUrl: '',
     ),
     const Project(
       title: 'E-commerce App - A Modern Grocery Store',
       githubUrl: 'https://github.com/31SUFI/E-Commerce-app.git',
+      iconUrl: 'assets/icons/projects_icons/e-commerce.svg',
+      liveUrl: '',
     ),
     const Project(
       title: 'Nayapay Clone - A Modern Payment Gateway',
       githubUrl: 'https://github.com/31SUFI/NayaPay_Clone.git',
+      iconUrl: 'assets/icons/projects_icons/nayapay.svg',
+      liveUrl: '',
     ),
   ];
 
@@ -113,13 +126,10 @@ class ProjectCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
             child: Center(
-              child: Text(
-                project.title.substring(0, 1),
-                style: const TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey,
-                ),
+              child: SvgPicture.asset(
+                project.iconUrl,
+                height: 40,
+                width: 40,
               ),
             ),
           ),
@@ -158,6 +168,28 @@ class ProjectCard extends StatelessWidget {
               width: 24,
             ),
           ),
+          if (project.isLive) ...[
+            const SizedBox(height: 12),
+            TextButton(
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.blue, // Text color
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 16, vertical: 8), // Padding
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8), // Rounded corners
+                ),
+              ),
+              onPressed: () async {
+                if (await canLaunch(project.liveUrl)) {
+                  await launch(project.liveUrl);
+                } else {
+                  throw 'Could not launch ${project.liveUrl}';
+                }
+              },
+              child: const Text('Live Preview'),
+            ),
+          ],
         ],
       ),
     );
@@ -167,9 +199,15 @@ class ProjectCard extends StatelessWidget {
 class Project {
   final String title;
   final String githubUrl;
+  final String iconUrl;
+  final String liveUrl;
+  final bool isLive;
 
   const Project({
     required this.title,
     required this.githubUrl,
+    required this.iconUrl,
+    required this.liveUrl,
+    this.isLive = false,
   });
 }

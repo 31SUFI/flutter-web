@@ -20,7 +20,7 @@ class Navbar extends StatelessWidget {
       actions: [
         IconButton(
           icon: SvgPicture.asset(
-            'assets/icons/github.svg',
+            'assets/icons/coding.svg',
             height: 24,
             width: 24,
           ),

@@ -14,15 +14,15 @@ class HomeScreen extends StatelessWidget {
     final ScrollController scrollController = ScrollController();
 
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
-        child: const Navbar(),
+        child: Navbar(),
       ),
       drawer: NavDrawer(scrollController: scrollController),
       body: SingleChildScrollView(
         controller: scrollController,
-        child: Column(
-          children: const [
+        child: const Column(
+          children: [
             HeroSection(),
             AboutSection(),
             SkillsSection(),
