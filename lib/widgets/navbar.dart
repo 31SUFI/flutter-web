@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_website/screens/home_screen.dart';
 import 'package:portfolio_website/utils/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:portfolio_website/pages/home_page.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({super.key});
@@ -54,7 +54,7 @@ class NavDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => const HomePage()),
+                    MaterialPageRoute(builder: (context) => const HomeScreen()),
                   );
                 },
               ),
