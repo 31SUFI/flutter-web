@@ -11,12 +11,25 @@ class FooterSection extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
       //color: AppColors.primaryColor.withOpacity(0.1), // Light background
       child: Center(
-        child: Text(
-          'Made with Flutter by Sufiyan',
-          style: AppStyles.bodyText.copyWith(
-            color: AppColors.textColor,
-            fontSize: 16,
-          ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Made with ',
+              style: AppStyles.bodyText.copyWith(
+                color: AppColors.textColor,
+                fontSize: 16,
+              ),
+            ),
+            const FlutterLogo(size: 20),
+            Text(
+              ' by Sufiyan',
+              style: AppStyles.bodyText.copyWith(
+                color: AppColors.textColor,
+                fontSize: 16,
+              ),
+            ),
+          ],
         ),
       ),
     );
