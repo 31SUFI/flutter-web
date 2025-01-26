@@ -8,26 +8,26 @@ class ProjectsSection extends StatelessWidget {
 
   static final List<Project> projectsList = [
     const Project(
-      title: 'Real Estate Web - A Modern Real Estate App',
+      title: 'Real Estate Web - Innovative Housing Solutions',
       githubUrl: 'https://github.com/31SUFI/Real-Estate-Website.git',
       liveUrl: 'https://bauction.netlify.app',
       iconUrl: 'assets/icons/projects_icons/real_estate.svg',
       isLive: true,
     ),
     const Project(
-      title: 'Bookify - A Modern Library App',
+      title: 'Bookify - Your Digital Library Companion',
       githubUrl: 'https://github.com/31SUFI/Bookify.git',
       iconUrl: 'assets/icons/projects_icons/bookify.svg',
       liveUrl: '',
     ),
     const Project(
-      title: 'E-commerce App - A Modern Grocery Store',
+      title: 'E-commerce App - Your Online Grocery Partner',
       githubUrl: 'https://github.com/31SUFI/E-Commerce-app.git',
       iconUrl: 'assets/icons/projects_icons/e-commerce.svg',
       liveUrl: '',
     ),
     const Project(
-      title: 'Nayapay Clone - A Modern Payment Gateway',
+      title: 'Nayapay Clone - Seamless Payment Gateway Experience',
       githubUrl: 'https://github.com/31SUFI/NayaPay_Clone.git',
       iconUrl: 'assets/icons/projects_icons/nayapay.svg',
       liveUrl: '',
