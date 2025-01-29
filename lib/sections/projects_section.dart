@@ -8,14 +8,30 @@ class ProjectsSection extends StatelessWidget {
 
   static final List<Project> projectsList = [
     const Project(
-      title: 'Real Estate Web - Innovative Housing Solutions',
+      title: 'Real Estate Web 🏫 - Innovative Housing Solutions',
       githubUrl: 'https://github.com/31SUFI/Real-Estate-Website.git',
       liveUrl: 'https://bauction.netlify.app',
       iconUrl: 'assets/icons/projects_icons/real_estate.svg',
       isLive: true,
     ),
     const Project(
-      title: 'Bookify - Your Digital Library Companion',
+      title: 'Furniture Store App 🛋️ - Elegant Furniture Shopping Experience',
+      githubUrl: 'https://github.com/31SUFI/furniture_Store_app_UI.git',
+      liveUrl:
+          'https://drive.google.com/file/d/10T6Rk-02wvmAKu86f6_tBFu9Z92gxAvK/view?usp=drivesdk',
+      iconUrl: 'assets/icons/projects_icons/furniture.svg',
+      isLive: true,
+    ),
+    const Project(
+      title: 'Car Marketplace App 🚗 - Buy Cars Easily',
+      githubUrl: 'https://github.com/31SUFI/Car_Shop',
+      liveUrl:
+          'https://drive.google.com/file/d/10Sh9dzM4qhNXWcdaqWcBR1_VCt5lArYs',
+      iconUrl: 'assets/icons/projects_icons/car.svg',
+      isLive: true,
+    ),
+    const Project(
+      title: 'Bookify 📚 - Your Digital Library Companion',
       githubUrl: 'https://github.com/31SUFI/Bookify.git',
       iconUrl: 'assets/icons/projects_icons/bookify.svg',
       liveUrl: '',
@@ -187,7 +203,7 @@ class ProjectCard extends StatelessWidget {
                   throw 'Could not launch ${project.liveUrl}';
                 }
               },
-              child: const Text('Live Preview'),
+              child: const Text('Preview'),
             ),
           ],
         ],
