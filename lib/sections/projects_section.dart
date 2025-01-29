@@ -15,6 +15,14 @@ class ProjectsSection extends StatelessWidget {
       isLive: true,
     ),
     const Project(
+      title: 'Modern Wallet App 💳 - Manage Your Finances Effortlessly',
+      githubUrl: 'https://github.com/31SUFI/Modern-Wallet-App/tree/master',
+      liveUrl:
+          'https://drive.google.com/file/d/112CYRIyrhyY_RmF2BhMH1sNQ0Z9c7Y-9/view?usp=drivesdk',
+      iconUrl: 'assets/icons/projects_icons/wallet.svg',
+      isLive: true,
+    ),
+    const Project(
       title: 'Furniture Store App 🛋️ - Elegant Furniture Shopping Experience',
       githubUrl: 'https://github.com/31SUFI/furniture_Store_app_UI.git',
       liveUrl:
