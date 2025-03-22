@@ -13,19 +13,13 @@ class ProjectsSection extends StatelessWidget {
       iconUrl: 'assets/icons/projects_icons/sign_lang.svg',
       liveUrl:
           'https://drive.google.com/file/d/1Bir4621T_g01yMsS2wI6nsCnFeg6MYGi/view',
+      isLive: true,
     ),
     const Project(
       title: 'SmartScan ML  - Real Time CNIC Scanning and Data Management',
       githubUrl: 'https://github.com/31SUFI/CardScanner',
       iconUrl: 'assets/icons/projects_icons/idcard.svg',
       liveUrl: '',
-    ),
-    const Project(
-      title: 'Real Estate Web 🏫 - Innovative Housing Solutions',
-      githubUrl: 'https://github.com/31SUFI/Real-Estate-Website.git',
-      liveUrl: 'https://bauction.netlify.app',
-      iconUrl: 'assets/icons/projects_icons/real_estate.svg',
-      isLive: true,
     ),
     const Project(
       title: 'Modern Wallet App 💳 - Manage Your Finances Effortlessly',
@@ -49,6 +43,13 @@ class ProjectsSection extends StatelessWidget {
       liveUrl:
           'https://drive.google.com/file/d/10Sh9dzM4qhNXWcdaqWcBR1_VCt5lArYs',
       iconUrl: 'assets/icons/projects_icons/car.svg',
+      isLive: true,
+    ),
+    const Project(
+      title: 'Real Estate Web 🏫 - Innovative Housing Solutions',
+      githubUrl: 'https://github.com/31SUFI/Real-Estate-Website.git',
+      liveUrl: 'https://bauction.netlify.app',
+      iconUrl: 'assets/icons/projects_icons/real_estate.svg',
       isLive: true,
     ),
   ];
