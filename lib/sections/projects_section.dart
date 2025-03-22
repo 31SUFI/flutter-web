@@ -8,6 +8,19 @@ class ProjectsSection extends StatelessWidget {
 
   static final List<Project> projectsList = [
     const Project(
+      title: 'GestureBridge 🖖 - AI-powered sign language interpreter',
+      githubUrl: 'https://github.com/31SUFI/sign-language-interpreter',
+      iconUrl: 'assets/icons/projects_icons/sign_lang.svg',
+      liveUrl:
+          'https://drive.google.com/file/d/1Bir4621T_g01yMsS2wI6nsCnFeg6MYGi/view',
+    ),
+    const Project(
+      title: 'SmartScan ML  - Real Time CNIC Scanning and Data Management',
+      githubUrl: 'https://github.com/31SUFI/CardScanner',
+      iconUrl: 'assets/icons/projects_icons/idcard.svg',
+      liveUrl: '',
+    ),
+    const Project(
       title: 'Real Estate Web 🏫 - Innovative Housing Solutions',
       githubUrl: 'https://github.com/31SUFI/Real-Estate-Website.git',
       liveUrl: 'https://bauction.netlify.app',
@@ -37,24 +50,6 @@ class ProjectsSection extends StatelessWidget {
           'https://drive.google.com/file/d/10Sh9dzM4qhNXWcdaqWcBR1_VCt5lArYs',
       iconUrl: 'assets/icons/projects_icons/car.svg',
       isLive: true,
-    ),
-    const Project(
-      title: 'Bookify 📚 - Your Digital Library Companion',
-      githubUrl: 'https://github.com/31SUFI/Bookify.git',
-      iconUrl: 'assets/icons/projects_icons/bookify.svg',
-      liveUrl: '',
-    ),
-    const Project(
-      title: 'E-commerce App - Your Online Grocery Partner',
-      githubUrl: 'https://github.com/31SUFI/E-Commerce-app.git',
-      iconUrl: 'assets/icons/projects_icons/e-commerce.svg',
-      liveUrl: '',
-    ),
-    const Project(
-      title: 'Nayapay Clone - Seamless Payment Gateway Experience',
-      githubUrl: 'https://github.com/31SUFI/NayaPay_Clone.git',
-      iconUrl: 'assets/icons/projects_icons/nayapay.svg',
-      liveUrl: '',
     ),
   ];
 

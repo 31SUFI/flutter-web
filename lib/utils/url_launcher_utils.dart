@@ -3,7 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 class UrlLauncherUtils {
   static Future<void> downloadCV() async {
     const url =
-        'https://drive.google.com/file/d/1JD02wqRGYKQXyedLTYxGBMceHL06i3aW/view?usp=sharing';
+        'https://drive.google.com/file/d/1YPKE5zy-8-lIMH7oxLTfRRsIKmPgAUXO/view?usp=sharing';
     if (await canLaunchUrl(Uri.parse(url))) {
       await launchUrl(Uri.parse(url));
     }
