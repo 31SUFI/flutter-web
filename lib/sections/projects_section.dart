@@ -19,7 +19,7 @@ class ProjectsSection extends StatelessWidget {
       title: 'SmartScan ML  - Real Time CNIC Scanning and Data Management',
       githubUrl: 'https://github.com/31SUFI/CardScanner',
       iconUrl: 'assets/icons/projects_icons/idcard.svg',
-      liveUrl: 'https://drive.google.com/file/d/12xP4zOEFGDWXUfQCkxOkUDoT_hQ1pz8G/view?usp=drivesdk',
+      liveUrl: 'https://drive.google.com/file/d/1MdgEl6CFLd7B6h_FZYgCI4z8H1dEFyPf/view?usp=drivesdk',
       isLive : true,
     ),
     const Project(
