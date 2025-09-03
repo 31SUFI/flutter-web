@@ -67,7 +67,7 @@ class SkillsSection extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'During my internship at Invision Custom Solutions, I developed a mobile app using Flutter, focusing on high-quality and scalable solutions. I worked closely with a cross-functional team to add new features, ensuring smooth functionality and integration across the app. This hands-on experience sharpened my skills in mobile development and team collaboration.',
+                  'I specialize in building high-quality, scalable mobile applications using Flutter. My experience includes working with cross-functional teams to deliver robust solutions with smooth functionality and seamless integration.',
                   style: AppStyles.bodyText.copyWith(
                     color: Colors.black,
                     height: 1.6,

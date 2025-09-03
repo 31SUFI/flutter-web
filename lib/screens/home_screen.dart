@@ -4,6 +4,7 @@ import 'package:portfolio_website/widgets/navbar.dart';
 import 'package:portfolio_website/sections/hero_section.dart';
 import 'package:portfolio_website/sections/about_section.dart';
 import 'package:portfolio_website/sections/skills_section.dart';
+import 'package:portfolio_website/sections/experience_section.dart';
 import 'package:portfolio_website/sections/projects_section.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
@@ -20,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     'hero': true,
     'about': false,
     'skills': false,
+    'experience': false,
     'projects': false,
   };
 
@@ -68,6 +70,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 duration: const Duration(milliseconds: 800),
                 opacity: visibleSections['skills']! ? 1.0 : 0.0,
                 child: const SkillsSection(),
+              ),
+            ),
+            VisibilityDetector(
+              key: const Key('experience'),
+              onVisibilityChanged: (info) {
+                updateVisibility('experience', info.visibleFraction > 0.3);
+              },
+              child: AnimatedOpacity(
+                duration: const Duration(milliseconds: 800),
+                opacity: visibleSections['experience']! ? 1.0 : 0.0,
+                child: const ExperienceSection(),
               ),
             ),
             VisibilityDetector(
