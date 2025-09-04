@@ -168,12 +168,15 @@ class ExperienceSection extends StatelessWidget {
                   children: [
                     Icon(icon, color: color, size: 24),
                     const SizedBox(width: 12),
-                    Text(
-                      title,
-                      style: AppStyles.subHeaderText.copyWith(
-                        fontSize: isDesktop ? 22 : 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black,
+                    Expanded(
+                      child: Text(
+                        title,
+                        style: AppStyles.subHeaderText.copyWith(
+                          fontSize: isDesktop ? 22 : 18,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black,
+                        ),
+                        softWrap: true,
                       ),
                     ),
                   ],
