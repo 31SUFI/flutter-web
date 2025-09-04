@@ -66,20 +66,6 @@ class ExperienceSection extends StatelessWidget {
   Widget _buildTimeline(bool isDesktop) {
     final experiences = [
       {
-        'title': 'Junior Flutter Developer',
-        'company': 'Pluton',
-        'period': '2024-2025',
-        'description': '''
-• Developed and maintained cross-platform mobile applications using Flutter
-• Implemented new features and improved existing functionality
-• Collaborated with cross-functional teams to define, design, and ship new features
-• Optimized application performance and resolved bugs
-• Participated in code reviews and team knowledge sharing sessions
-''',
-        'icon': Icons.work,
-        'color': Colors.blue,
-      },
-      {
         'title': 'Freelance Flutter Developer',
         'company': 'Self-Employed',
         'period': '2025',
@@ -92,6 +78,20 @@ class ExperienceSection extends StatelessWidget {
 ''',
         'icon': Icons.computer,
         'color': Colors.green,
+      },
+      {
+        'title': 'Junior Flutter Developer',
+        'company': 'Pluton',
+        'period': '2024-2025',
+        'description': '''
+• Developed and maintained cross-platform mobile applications using Flutter
+• Implemented new features and improved existing functionality
+• Collaborated with cross-functional teams to define, design, and ship new features
+• Optimized application performance and resolved bugs
+• Participated in code reviews and team knowledge sharing sessions
+''',
+        'icon': Icons.work,
+        'color': Colors.blue,
       },
       {
         'title': 'Flutter Developer Intern',
