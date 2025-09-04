@@ -86,6 +86,19 @@ class NavDrawer extends StatelessWidget {
               ),
               ListTile(
                 leading: const Icon(Icons.work, color: Colors.black),
+                title: const Text('Experience',
+                    style: TextStyle(color: Colors.black)),
+                onTap: () {
+                  Navigator.pop(context);
+                  scrollController.animateTo(
+                    1500,
+                    duration: const Duration(milliseconds: 500),
+                    curve: Curves.easeInOut,
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.code, color: Colors.black),
                 title: const Text('Projects',
                     style: TextStyle(color: Colors.black)),
                 onTap: () {
